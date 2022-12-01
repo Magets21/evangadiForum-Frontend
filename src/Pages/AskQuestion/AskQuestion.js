@@ -15,7 +15,7 @@ export default function AskQuestion() {
     e.preventDefault();
     try {
       await axios.post(
-        "https://evangadiforum-frontend-ftew.onrender.com/api/questions",
+        "https://evangadiforum-backend-c6v6.onrender.com/api/questions",
         {
           id: userData.user.id,
           question: form.question,

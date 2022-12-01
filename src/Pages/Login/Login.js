@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const loginRes = await axios.post(
-        "https://evangadiforum-frontend-ftew.onrender.com/api/users/login",
+        "https://evangadiforum-backend-c6v6.onrender.com/api/users/login",
         {
           email: form.email,
           password: form.password,

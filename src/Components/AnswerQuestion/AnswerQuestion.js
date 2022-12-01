@@ -14,7 +14,7 @@ const AnswerQuestion = ({ questionId }) => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://evangadiforum-frontend-ftew.onrender.com/api/answers",
+        "https://evangadiforum-backend-c6v6.onrender.com/api/answers",
         {
           id: userData.user.id,
           questionId: questionId,
