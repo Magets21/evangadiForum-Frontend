@@ -18,9 +18,12 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4000/api/users", form);
+      await axios.post(
+        "https://evangadiforum-frontend-ftew.onrender.com/api/users",
+        form
+      );
       const loginRes = await axios.post(
-        "http://localhost:4000/api/users/login",
+        "https://evangadiforum-frontend-ftew.onrender.com/api/users/login",
         {
           email: form.email,
           password: form.password,

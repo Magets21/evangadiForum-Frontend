@@ -11,7 +11,7 @@ const SingleQuestion = () => {
   const questionByPostId = async () => {
     try {
       const question = await axios.get(
-        `http://localhost:4000/api/questions/${params.id}`
+        `https://evangadiforum-frontend-ftew.onrender.com/api/questions/${params.id}`
       );
       setQuestion(question.data.data);
     } catch (err) {
@@ -21,7 +21,7 @@ const SingleQuestion = () => {
   const answersByQuestionId = async () => {
     try {
       const answersRes = await axios.get(
-        `http://localhost:4000/api/answers/${question?.question_id}`
+        `https://evangadiforum-frontend-ftew.onrender.com/api/answers/${question?.question_id}`
       );
       setAnswers(answersRes.data.data);
     } catch (err) {
