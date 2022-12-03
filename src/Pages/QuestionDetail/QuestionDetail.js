@@ -21,7 +21,7 @@ const SingleQuestion = () => {
   const answersByQuestionId = async () => {
     try {
       const answersRes = await axios.get(
-        `http://localhost:4000/api/answers/${question?.question_id}`
+        `https://evangadiforum-backend-c6v6.onrender.com/api/answers/${question?.question_id}`
       );
       setAnswers(answersRes.data.data);
     } catch (err) {
